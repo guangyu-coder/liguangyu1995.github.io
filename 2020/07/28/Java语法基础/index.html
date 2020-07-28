@@ -20,28 +20,32 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="[TOC] Java 基础 40语言特性 12Q1：Java 语言的优点？① 平台无关性，摆脱硬件束缚，”一次编写，到处运行”。 ② 相对安全的内存管理和访问机制，避免大部分内存泄漏和指针越界。 ③ 热点代码检测和运行时编译及优化，使程序随运行时间增长获得更高性能。 ④ 完善的应用程序接口，支持第三方类库。 Q2：Java 如何实现平台无关？JVM： Java 编译器可生成与计算机体系结构无关的字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java语法基础">
+<meta property="og:url" content="http://yoursite.com/2020/07/28/Java%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="[TOC] Java 基础 40语言特性 12Q1：Java 语言的优点？① 平台无关性，摆脱硬件束缚，”一次编写，到处运行”。 ② 相对安全的内存管理和访问机制，避免大部分内存泄漏和指针越界。 ③ 热点代码检测和运行时编译及优化，使程序随运行时间增长获得更高性能。 ④ 完善的应用程序接口，支持第三方类库。 Q2：Java 如何实现平台无关？JVM： Java 编译器可生成与计算机体系结构无关的字">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-28T14:40:16.487Z">
+<meta property="article:modified_time" content="2020-07-28T14:05:37.083Z">
 <meta property="article:author" content="liguangyu">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/07/28/Java%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Blog</title>
+  <title>Java语法基础 | Blog</title>
   
 
 
@@ -170,9 +174,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -188,10 +193,9 @@
       <meta itemprop="name" content="Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/28/Java%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Java语法基础</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Java语法基础
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -205,6 +209,13 @@
             </span>
 
           
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -215,7 +226,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>[TOC]</p>
+        <p>[TOC]</p>
 <h1 id="Java-基础-40"><a href="#Java-基础-40" class="headerlink" title="Java 基础 40"></a>Java 基础 40</h1><h2 id="语言特性-12"><a href="#语言特性-12" class="headerlink" title="语言特性 12"></a>语言特性 12</h2><h3 id="Q1：Java-语言的优点？"><a href="#Q1：Java-语言的优点？" class="headerlink" title="Q1：Java 语言的优点？"></a>Q1：Java 语言的优点？</h3><p>① 平台无关性，摆脱硬件束缚，”一次编写，到处运行”。</p>
 <p>② 相对安全的内存管理和访问机制，避免大部分内存泄漏和指针越界。</p>
 <p>③ 热点代码检测和运行时编译及优化，使程序随运行时间增长获得更高性能。</p>
@@ -522,159 +533,30 @@
 <p>JSON 序列化就是将数据对象转换为 JSON 字符串，在序列化过程中抛弃了类型信息，所以反序列化时只有提供类型信息才能准确进行。相比前两种方式可读性更好，方便调试。</p>
 <p>序列化通常会使用网络传输对象，而对象中往往有敏感数据，容易遭受攻击，Jackson 和 fastjson 等都出现过反序列化漏洞，因此不需要进行序列化的敏感属性传输时应加上 transient 关键字。transient 的作用就是把变量生命周期仅限于内存而不会写到磁盘里持久化，变量会被设为对应数据类型的零值。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/18/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liguangyu">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/18/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-07-18 23:04:11" itemprop="dateCreated datePublished" datetime="2020-07-18T23:04:11+08:00">2020-07-18</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/18/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/19/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E9%9D%A2%E7%BB%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="liguangyu">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/19/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E9%9D%A2%E7%BB%8F/" class="post-title-link" itemprop="url">新浪面经</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-19 10:16:04" itemprop="dateCreated datePublished" datetime="2020-05-19T10:16:04+08:00">2020-05-19</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-26 17:23:42" itemprop="dateModified" datetime="2020-07-26T17:23:42+08:00">2020-07-26</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="一面"><a href="#一面" class="headerlink" title="一面"></a>一面</h1><p>主要问了Redis，kafka，elasticSearch等相关底层原理</p>
-<h2 id="（1）hashmap在1-7为什么会出现死锁？"><a href="#（1）hashmap在1-7为什么会出现死锁？" class="headerlink" title="（1）hashmap在1.7为什么会出现死锁？"></a>（1）hashmap在1.7为什么会出现死锁？</h2><p>答：</p>
-<h2 id="（2）项目中为什么用kafka，与redis等消息队列优势在哪？"><a href="#（2）项目中为什么用kafka，与redis等消息队列优势在哪？" class="headerlink" title="（2）项目中为什么用kafka，与redis等消息队列优势在哪？"></a>（2）项目中为什么用kafka，与redis等消息队列优势在哪？</h2><p>答：redis消息队列可靠性不足，适用于一些即时聊天，<br>kafka性能快且具有高吞吐量</p>
-<h2 id="（3）redis的底层数据结构？"><a href="#（3）redis的底层数据结构？" class="headerlink" title="（3）redis的底层数据结构？"></a>（3）redis的底层数据结构？</h2><p>答：SDS，包含len，free，buf[]，提前知道数组的len可以不用每次进行内存的重分配工作，可以避免c字符串的缓冲区溢出问题</p>
-<h2 id="2-算法：输入一个整数，不论正负，求二进制中1的个数"><a href="#2-算法：输入一个整数，不论正负，求二进制中1的个数" class="headerlink" title="2. 算法：输入一个整数，不论正负，求二进制中1的个数"></a>2. 算法：输入一个整数，不论正负，求二进制中1的个数</h2>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -727,6 +609,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java-基础-40"><span class="nav-number">1.</span> <span class="nav-text">Java 基础 40</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语言特性-12"><span class="nav-number">1.1.</span> <span class="nav-text">语言特性 12</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1：Java-语言的优点？"><span class="nav-number">1.1.1.</span> <span class="nav-text">Q1：Java 语言的优点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2：Java-如何实现平台无关？"><span class="nav-number">1.1.2.</span> <span class="nav-text">Q2：Java 如何实现平台无关？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3：JDK-和-JRE-的区别？"><span class="nav-number">1.1.3.</span> <span class="nav-text">Q3：JDK 和 JRE 的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4：Java-按值调用还是引用调用？"><span class="nav-number">1.1.4.</span> <span class="nav-text">Q4：Java 按值调用还是引用调用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5：浅拷贝和深拷贝的区别？"><span class="nav-number">1.1.5.</span> <span class="nav-text">Q5：浅拷贝和深拷贝的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q6：什么是反射？"><span class="nav-number">1.1.6.</span> <span class="nav-text">Q6：什么是反射？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q7：Class-类的作用？如何获取一个-Class-对象？"><span class="nav-number">1.1.7.</span> <span class="nav-text">Q7：Class 类的作用？如何获取一个 Class 对象？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q8：什么是注解？什么是元注解？"><span class="nav-number">1.1.8.</span> <span class="nav-text">Q8：什么是注解？什么是元注解？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q9：什么是泛型，有什么作用？"><span class="nav-number">1.1.9.</span> <span class="nav-text">Q9：什么是泛型，有什么作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q10：泛型擦除是什么？"><span class="nav-number">1.1.10.</span> <span class="nav-text">Q10：泛型擦除是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q11：JDK8-新特性有哪些？"><span class="nav-number">1.1.11.</span> <span class="nav-text">Q11：JDK8 新特性有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q12：异常有哪些分类？"><span class="nav-number">1.1.12.</span> <span class="nav-text">Q12：异常有哪些分类？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据类型-5"><span class="nav-number">1.2.</span> <span class="nav-text">数据类型 5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1：Java-有哪些基本数据类型？"><span class="nav-number">1.2.1.</span> <span class="nav-text">Q1：Java 有哪些基本数据类型？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2：自动装箱-拆箱是什么？"><span class="nav-number">1.2.2.</span> <span class="nav-text">Q2：自动装箱&#x2F;拆箱是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3：String-是不可变类为什么值可以修改？"><span class="nav-number">1.2.3.</span> <span class="nav-text">Q3：String 是不可变类为什么值可以修改？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4：字符串拼接的方式有哪些？"><span class="nav-number">1.2.4.</span> <span class="nav-text">Q4：字符串拼接的方式有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5：String-a-“a”-new-String-“b”-创建了几个对象？"><span class="nav-number">1.2.5.</span> <span class="nav-text">Q5：String a &#x3D; “a” + new String(“b”) 创建了几个对象？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#面向对象-10"><span class="nav-number">1.3.</span> <span class="nav-text">面向对象 10</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1：谈一谈你对面向对象的理解"><span class="nav-number">1.3.1.</span> <span class="nav-text">Q1：谈一谈你对面向对象的理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2：面向对象的三大特性？"><span class="nav-number">1.3.2.</span> <span class="nav-text">Q2：面向对象的三大特性？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3：重载和重写的区别？"><span class="nav-number">1.3.3.</span> <span class="nav-text">Q3：重载和重写的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4：类之间有哪些关系？"><span class="nav-number">1.3.4.</span> <span class="nav-text">Q4：类之间有哪些关系？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q6：内部类的作用是什么，有哪些分类？"><span class="nav-number">1.3.5.</span> <span class="nav-text">Q6：内部类的作用是什么，有哪些分类？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q7：访问权限控制符有哪些？"><span class="nav-number">1.3.6.</span> <span class="nav-text">Q7：访问权限控制符有哪些？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q8：接口和抽象类的异同？"><span class="nav-number">1.3.7.</span> <span class="nav-text">Q8：接口和抽象类的异同？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q9：接口和抽象类应该怎么选择？"><span class="nav-number">1.3.8.</span> <span class="nav-text">Q9：接口和抽象类应该怎么选择？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q10：子类初始化的顺序"><span class="nav-number">1.3.9.</span> <span class="nav-text">Q10：子类初始化的顺序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#集合-7"><span class="nav-number">1.4.</span> <span class="nav-text">集合 7</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1：说一说-ArrayList"><span class="nav-number">1.4.1.</span> <span class="nav-text">Q1：说一说 ArrayList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2：说一说-LinkedList"><span class="nav-number">1.4.2.</span> <span class="nav-text">Q2：说一说 LinkedList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3：Set-有什么特点，有哪些实现？"><span class="nav-number">1.4.3.</span> <span class="nav-text">Q3：Set 有什么特点，有哪些实现？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4：TreeMap-有什么特点？"><span class="nav-number">1.4.4.</span> <span class="nav-text">Q4：TreeMap 有什么特点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5：HashMap-有什么特点？"><span class="nav-number">1.4.5.</span> <span class="nav-text">Q5：HashMap 有什么特点？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q6：HashMap-相关方法的源码？"><span class="nav-number">1.4.6.</span> <span class="nav-text">Q6：HashMap 相关方法的源码？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q7：HashMap-为什么线程不安全？"><span class="nav-number">1.4.7.</span> <span class="nav-text">Q7：HashMap 为什么线程不安全？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IO-流-6"><span class="nav-number">1.5.</span> <span class="nav-text">IO 流 6</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1：同步-异步-阻塞-非阻塞-IO-的区别？"><span class="nav-number">1.5.1.</span> <span class="nav-text">Q1：同步&#x2F;异步&#x2F;阻塞&#x2F;非阻塞 IO 的区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2：什么是-BIO？"><span class="nav-number">1.5.2.</span> <span class="nav-text">Q2：什么是 BIO？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3：什么是-NIO？"><span class="nav-number">1.5.3.</span> <span class="nav-text">Q3：什么是 NIO？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4：什么是-AIO？"><span class="nav-number">1.5.4.</span> <span class="nav-text">Q4：什么是 AIO？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5：java-io-包下有哪些流？"><span class="nav-number">1.5.5.</span> <span class="nav-text">Q5：java.io 包下有哪些流？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q6：序列化和反序列化是什么？"><span class="nav-number">1.5.6.</span> <span class="nav-text">Q6：序列化和反序列化是什么？</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

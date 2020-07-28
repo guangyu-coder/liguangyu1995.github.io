@@ -1238,7 +1238,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8a418e;
+  background: #ba2e21;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1364,7 +1364,7 @@ pre .javascript .function {
   background: #fc6423;
 }
 .post-toc {
-  font-size: 0.875em;
+  font-size: 13px;
 }
 .post-toc ol {
   list-style: none;
@@ -2726,5 +2726,5 @@ ul.breadcrumb li + li:last-child {
   display: block;
 }
 .post-toc ol {
-  font-size: 30px;
+  font-size: 12px;
 }
